@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="learnprogramming.academy.imbizo_wil3_v2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Imbizo_V2"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Imbizo_WIL3_V2.NoActionBar">
+        <activity
+            android:name=".Main.MainForgotPassword"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Main.MainSignup"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Main.MainContentDoc"
+            android:exported="false" />
+        <activity
+            android:name=".Create.CreateLectureDoc"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.MainContent"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Create.AddContent"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Create.CreateLecture"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Create.CreateCategory"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Imbizo_WIL3_V2.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Main.MainLogin"
+            android:exported="true"
+            android:theme="@style/Theme.Imbizo_WIL3_V2.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

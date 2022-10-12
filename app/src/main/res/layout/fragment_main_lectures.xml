@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainLectures">
+
+    <include layout="@layout/activity_retrive_data_in_lecturerecycler_view"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/top_nav_menu" >
+
+            <EditText
+                android:id="@+id/searchItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SEARCH LECTURES"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="center|top"/>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <!--&lt;!&ndash;//FAB BUTTON&ndash;&gt;-->
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/addItem"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/ic_baseline_add_24"-->
+    <!--        android:layout_gravity="bottom|right"-->
+    <!--        android:layout_margin="32dp"-->
+    <!--        />-->
+
+
+
+</FrameLayout>
